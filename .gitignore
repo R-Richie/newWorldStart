@@ -10,7 +10,7 @@
 *.cmd
 *.iml
 mvnw
-
+target/*
 .idea
 .mvn
 .svn

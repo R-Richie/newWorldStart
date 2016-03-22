@@ -48,8 +48,16 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!--Byte Code Generation Library is high level API to generate
+		and transform JAVA byte code. It is used by AOP, testing,
+		data access frameworks to generate dynamic proxy objects and intercept field access. -->
+		<dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib</artifactId>
+			<version>3.2.1</version>
+		</dependency>
 	</dependencies>
-	
+
 	<build>
 		<plugins>
 			<plugin>

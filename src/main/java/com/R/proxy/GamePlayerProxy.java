@@ -5,7 +5,7 @@ package com.R.proxy;
  * Date: 2016/3/21
  * Time: 18:38
  */
-public class GamePlayerProxy implements IGamePlayer {
+public class GamePlayerProxy implements IGamePlayer,IProxy {
     private IGamePlayer gamePlayer = null;
     public GamePlayerProxy(IGamePlayer _gamePlayer){
         this.gamePlayer = _gamePlayer;
@@ -23,10 +23,16 @@ public class GamePlayerProxy implements IGamePlayer {
     @Override
     public void upgrade() {
         this.gamePlayer.upgrade();
+        this.count();
     }
 
+//    @Override
+//    public IGamePlayer getProxy() {
+//        return this;
+//    }
+
     @Override
-    public IGamePlayer getProxy() {
-        return this;
+    public void count() {
+        System.out.println("升级总费用是：150元");
     }
 }

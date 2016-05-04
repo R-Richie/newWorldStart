@@ -1,8 +1,7 @@
-package com.R.DesignPattern;
+package com.R.designPattern;
 
 import java.util.Collection;
 import java.util.HashMap;
-import java.util.Map;
 
 /**
  * User: lijiaren
